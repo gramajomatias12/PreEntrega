@@ -49,7 +49,7 @@ El documento HTML dividido en las etiquetas semánticas principales:
 
 Este proyecto está alojado en un servicio de *hosting* gratuito.
 
-**URL Funcional del Sitio:** *[INSERTAR AQUÍ LA URL DE NETLIFY O GITHUB PAGES]*
+**URL Funcional del Sitio:** *https://gramajomatias12.github.io/PreEntrega/*
 
 
 ---
