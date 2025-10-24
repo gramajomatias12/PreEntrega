@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda Online</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="./assets/img/logo.png" alt="Logo de la tienda">
+            <h1> Bienvenidos a nuestra Tienda Online</h1>
+        </div>
+
+
+        <div class="menu">
+            <ul>
+                <li><a class="enlace" href="#">Inicio</a></li>
+                <li><a class="enlace" href="#Productos">Productos</a></li>
+                <li><a class="enlace" href="#acerca-de">Acerca de Nosotros</a></li>
+                <li><a class="enlace" href="#contacto">Contacto</a></li>
+                <li><i class="fas fa-shopping-cart" style="color: green;"></i> <a class="enlace" target="_blank"
+                        href="./pages/carrito.html">Carrito</a></li>
+            </ul>
+        </div>
+
+        <div class="main">
+            <h2>Nuestros Productos</h2>
+
+            <div class="card">
+                <img src="https://picsum.photos/200/250?random=1" alt="Producto 1">
+                <h3>Producto 1</h3>
+                <p class="descripcion">Descripción breve del producto 1</p>
+                <p class="precio">$10.000</p>
+                <button class="btn-carrito">Añadir al Carrito</button>
+            </div>
+
+            <div class="card">
+                <img src="https://picsum.photos/200/250?random=2" alt="Producto 2">
+                <h3>Producto 2</h3>
+                <p class="descripcion">Descripción breve del producto 2</p>
+                <p class="precio">Precio: $20.000</p>
+                <button class="btn-carrito">Añadir al Carrito</button>
+            </div>
+
+            <div class="card">
+                <img src="https://picsum.photos/200/250?random=3" alt="Producto 3">
+                <h3>Producto 3</h3>
+                <p class="descripcion">Descripción breve del producto 3</p>
+                <p class="precio">Precio: $30.000</p>
+                <button class="btn-carrito">Añadir al Carrito</button>
+            </div>
+
+            <div class="card">
+                <img src="https://picsum.photos/200/250?random=4" alt="Producto 4">
+                <h3>Producto 4</h3>
+                <p class="descripcion">Descripción breve del producto 4.</p>
+                <p class="precio">Precio: $40.000</p>
+                <button class="btn-carrito">Añadir al Carrito</button>
+            </div>
+
+            <div class="card">
+                <img src="https://picsum.photos/200/250?random=5" alt="Producto 5">
+                <h3>Producto 5</h3>
+                <p class="descripcion">Descripción breve del producto 5.</p>
+                <p class="precio">Precio: $50.000</p>
+                <button class="btn-carrito">Añadir al Carrito</button>
+            </div>
+
+            <div class="card">
+                <img src="https://picsum.photos/200/250?random=6" alt="Producto 6">
+                <h3>Producto 6</h3>
+                <p class="descripcion">Descripción breve del producto 6.</p>
+                <p class="precio">Precio: $60.000</p>
+                <button class="btn-carrito">Añadir al Carrito</button>
+            </div>
+        </div>
+
+        <div class="aside">
+            <h2 id="acerca-de">Acerca de Nosotros</h2>
+
+            <p>Somos una tienda online dedicada a ofrecer los mejores productos a nuestros clientes.</p>
+            <p>Contamos con un equipo de profesionales listos para atenderte.</p>
+            <p>Si tienes alguna pregunta o inquietud, no dudes en contactarnos.</p>
+
+            <h2 id="contacto">Contacto</h2>
+
+            <form action="https://formspree.io/f/mzzaonrl" method="post" autocomplete="on">
+                <label>Nombre: <input type="text" name="nombre" required placeholder="Ingrese su nombre"></label>
+                <br>
+                <label>Correo: <input type="email" name="correo" required placeholder="Ingrese su correo"></label>
+                <br>
+                <label>Mensaje: <textarea name="mensaje" required placeholder="Ingrese su mensaje"></textarea></label>
+                <br>
+                <input type="hidden" name="_redirect" value="./gracias.html">
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+
+        <div class="footer">
+            <p>&copy; 2026 Tienda Online. Todos los derechos reservados.</p>
+        </div>
+    </div>
+</body>
+
+</html>
