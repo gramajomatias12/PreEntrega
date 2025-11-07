@@ -38,7 +38,7 @@ body {
     grid-template-columns: 3.7fr 1.3fr;
     grid-template-rows: 100px 60px 1fr auto;
     height: 100vh;
-    grid-template-areas: 
+    grid-template-areas:
         "header header"
         "menu menu"
         "main aside"
@@ -86,7 +86,7 @@ body {
 }
 
 .menu .enlace:hover {
-    color: var(--color-acento-hover); 
+    color: var(--color-acento-hover);
     font-size: 1.2rem;
 }
 
@@ -173,7 +173,8 @@ body {
     grid-area: aside;
     background-color: var(--color-fondo-seccion);
     color: var(--color-texto-oscuro);
-     padding: 20px;  /* Puedes agregar padding aquí si quieres */
+    padding: 20px;
+    /* Puedes agregar padding aquí si quieres */
 }
 
 
@@ -237,53 +238,70 @@ body {
     text-align: center;
 }
 
+
+/* MEDIA QUERY: Pantallas medianas (< 1024px)*/
+
+@media (max-width: 1024px) {
+
+    .main {
+      
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        /* grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); */
+        
+    }
+
+    .aside{
+        min-width: 350px  ;
+    }
+
+}
+
 /* MEDIA QUERY: Pantallas Pequeñas (< 768px)*/
 
 @media (max-width: 768px) {
-    
+
     .container {
         /* 1. Definimos una sola columna (1fr) */
         grid-template-columns: 1fr;
-        
+
         /* 2. Redefinimos las filas: la altura es automática (auto) */
-        grid-template-rows: 100px 60px auto auto auto; 
-        
+        grid-template-rows: 100px 60px auto auto auto;
+
         /* 3. Reorganizamos las áreas para que ocupen 1 columna completa */
-        grid-template-areas: 
+        grid-template-areas:
             "header"
             "menu"
-            "main"   /* El main ahora ocupa una fila completa */
-            "aside"  /* El aside se mueve a la siguiente fila completa */
+            "main"
+            /* El main ahora ocupa una fila completa */
+            "aside"
+            /* El aside se mueve a la siguiente fila completa */
             "footer";
-        
-        height: auto; 
+
+        height: auto;
     }
 
-    .header h1{
+    .header h1 {
         font-size: 1.2rem;
     }
 
     .menu {
         display: flex;
-        justify-content: space-evenly; 
-        flex-wrap: wrap; 
-        height: auto;
-        padding: 10px 0;
-    }
-
-    .menu li {
-        margin: 10px; /* Reducido de 20px a 10px */
-        display: inline-block; /* Mejor para el margen vertical en wrap */
-    }
-    
-    .main {
-        padding: 2rem 1rem; 
-    }
-    
-    .menu {
-        /* Permite que los elementos del menú se envuelvan si la pantalla es muy estrecha */
+        justify-content: space-evenly;
         flex-wrap: wrap;
         height: auto;
         padding: 10px 0;
+         
     }
+
+    .menu li {
+        margin: 5px;
+        display: inline-block;
+        /* Mejor para el margen vertical en wrap */
+    }
+
+    .main {
+        padding: 2rem 1rem;
+    }
+
+  
 }
